@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 10px solid;
+    border-color: white green white orange;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.sky{
+    background-image: url(./images/sky.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+.text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.happy{
+    background-color: orange;
+    margin-right: 10px;
+}
+.ind{
+    background-color: white;
+    margin-right: 10px;
+}
+.day{
+    background-color: green;
+}
+.sun{
+    background-image: url(./images/sunn.png);
+    height: 100px;
+    width: 100px;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 1;
+    animation: sun 10s infinite linear;
+}
+@keyframes sun{
+    100%{
+        transform: translateX(-100px);
+    }
+}
+.city{
+    background-image: url(./images/city.png);
+    width: 500%;
+    height: 250px;
+    position: absolute;
+    top:29%;
+    z-index: 4;
+    animation: city 10s infinite linear;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-2000px);
+    }
+}
+.road{
+    width: 500%;
+    background-image: url(./images/road.jpg);
+    height: 203px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    animation: road 5s infinite linear;
+}
+@keyframes road{
+    100%{
+        transform: translateX(-2000px);
+    }
+}
+.car{
+    background-image: url(./images/car.png);
+    height: 250px;
+    width: 350px;
+    background-size: 100%;
+    position: absolute;
+    top: 51%;
+    left: calc(50% - 175px);
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.flag{
+    background-image: url(./images/Tiranga1.svg);
+    height: 80px;
+    width: 80px;
+    background-size: 100%;
+    position: absolute;
+    top: 56%;
+    left: calc(50% + 80px);
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wheel{
+    background-image: url(./images/wheel.png);
+    height: 62px;
+    width: 62px;
+    background-size: 100%;
+    position: absolute;
+    top: 70%;
+    margin-top: 10px;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: wheel 2s infinite linear;
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wheel1{
+    right: calc(50% + 83px);
+}
+.wheel2{
+    left: calc(50% + 70px);
+}
